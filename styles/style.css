@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --cor-primaria: #000000;
+    --cor-terciaria: #C0DBEA;
+    --cor-hover: #E8A0BF;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(/assets/background_image.jpg);
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    display:flex;
+    background-color: var(--cor-primaria);
+     
+}
+
+.cabecalho__menu{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding-top: 2%;
+    padding-right: 0%;
+    padding-left: 50%;
+    padding-bottom: 2%;
+    }
+
+.cabecalho__menu__item{
+    padding:4%;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 15px;
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    white-space: nowrap;
+    color: var(--cor-terciaria);
+    text-decoration: none;  
+}
+
+.conteudo{
+    padding: 8% 20%; 
+    display: flex;
+    align-items: center;     
+    justify-content: space-between;
+}
+
+.conteudo__principal{ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+            
+}
+
+.conteudo__principal__titulo{
+    font-family: var(--fonte-primaria);
+    color:var(--cor-secundaria);
+    font-size:2.5rem;
+    font-weight: 600;
+}
+
+.conteudo__principal__apresentacao{
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    font-size: 2rem;
+}
+
+.rodape{
+    padding-top: 24px;
+    padding-right: 1%;
+    padding-left: 15%;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+                
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+        padding-top: 2%;
+        padding-right: 0%;
+        padding-left: 5%;
+        padding-bottom: 2%;
+    }
+
+    .conteudo{
+        flex-direction: column;
+        padding: 5%;
+        gap: 10px;
+    }
+
+    .conteudo__principal{
+        width: auto;
+    }
+
+    .rodape{
+        padding-top: 2%;
+        padding-right: 1%;
+        padding-left: 2%;
+        padding-bottom: 24px;
+        justify-content: center;
+    }
+}
