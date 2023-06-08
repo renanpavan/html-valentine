@@ -94,8 +94,12 @@ body{
 }
 
 @media screen and (min-width: 780px) {
-    .full-width-img {
-    margin: auto;
-    width: 90%;
-}
+    .cabecalho{
+        padding: 0;
+    }
+
+    .cabecalho__meu{
+        padding: 0;
+    }
+
 }
