@@ -93,13 +93,22 @@ body{
     font-size: 1.5rem;
 }
 
-@media screen and (min-width: 780px) {
+@media (max-width: 1200px){
     .cabecalho{
-        padding: 0;
+        padding: 10%;
+                
     }
 
-    .cabecalho__meu{
-        padding: 0;
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
     }
 
+    .apresentacao__conteudo{
+        width: auto;
+    }
 }
