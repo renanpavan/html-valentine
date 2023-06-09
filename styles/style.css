@@ -101,14 +101,81 @@ body{
 
     .cabecalho__menu{
         justify-content: center;
-    }
-    
-    .apresentacao{
-        flex-direction: column-reverse;
-        padding: 5%;
+        padding-top: 2%;
+        padding-right: 0%;
+        padding-left: 5%;
+        padding-bottom: 2%;
+        gap: 45px
     }
 
-    .apresentacao__conteudo{
+    .conteudo{
+        flex-direction: column;
+        padding: 5%;
+        gap: 10px;
+    }
+
+    .conteudo__principal{
         width: auto;
     }
+
+    .rodape{
+        padding-top: 2%;
+        padding-right: 1%;
+        padding-left: 2%;
+        padding-bottom: 24px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 720px){
+    .cabecalho{
+        padding: 15%;
+                
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+        padding-top: 2%;
+        padding-right: 0%;
+        padding-left: 5%;
+        padding-bottom: 2%;
+        gap: 20px;
+    }
+
+    .conteudo{
+        flex-direction: column;
+        padding: 5%;
+        gap: 10px;
+    }
+
+    .conteudo__principal{
+        width: auto;
+    }
+
+    .rodape{
+        padding-top: 2%;
+        padding-right: 1%;
+        padding-left: 2%;
+        padding-bottom: 24px;
+        justify-content: center;
+    }
+
+@media (max-width: 470px){
+    .cabecalho{
+        background-size: 100vh;
+    }
+    
+    .cabecalho__menu__item{
+        font-size: 5px;
+        padding-top: 2%;
+        padding-right: 0%;
+        padding-left: 30%;
+        padding-bottom: 2%;
+    }
+
+    .secao__cabecalho{
+
+    }
+}
+
 }
