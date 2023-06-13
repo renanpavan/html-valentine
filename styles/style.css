@@ -21,25 +21,20 @@ body{
     box-sizing: border-box;
 }
 
-.cabecalho{
-    display:flex;
-    background-color: var(--cor-primaria);
-     
-}
-
 .cabecalho__menu{
     display: flex;
     align-content: center;
-    justify-content: space-between;
-    gap: 45px;
-    padding-top: 2%;
-    padding-right: 0%;
-    padding-left: 30%;
-    padding-bottom: 2%;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+    gap: 10px;
+    padding-top: 2em;
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-bottom: 2em;
     }
 
 .cabecalho__menu__item{
-    padding:4%;
+    padding:1%;
     border: 2px solid var(--cor-terciaria);
     border-radius: 15px;
     font-family: var(--fonte-primaria);
@@ -47,6 +42,10 @@ body{
     white-space: nowrap;
     color: var(--cor-terciaria);
     text-decoration: none;  
+}
+
+.cabecalho__menu__item:hover{
+    background-color: #383636;
 }
 
 .conteudo{
@@ -93,94 +92,26 @@ body{
     font-size: 1.5rem;
 }
 
-@media (max-width: 1300px){
-    .cabecalho{
-        padding: 0%;
-        width: auto;
-                
-    }
+
+                            /* MEDIA SCREEN */
+
+@media screen and (max-width: 1036px){
 
     .cabecalho__menu{
         justify-content: center;
-        gap: 15px;
-        padding-top: 2%;
-        padding-right: 0%;
-        padding-left: 25%;
-        padding-bottom: 1%;
+        margin: 0;
+        gap: 2px;
+        padding: 2em 0;
 
     }
     
-    .conteudo{
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-
-    .conteudo__principal{
-        width: 50%;
-    }
-
-    .rodape{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 900px){
-    .cabecalho{
-        padding: 5%;
-        width: auto;
-                
-    }
-
-    .cabecalho__menu{
-        justify-content: flex-start;
-        padding-top: 1%;
-        padding-right: 0%;
-        padding-left: 1%;
-        padding-bottom: 1%;
-
-    }
-    
-    .conteudo{
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-
-    .conteudo__principal{
-        width: 50%;
-    }
-
-    .rodape{
-        padding-top: 5%;
-        padding-right: 1%;
-        padding-left: 5%;
-        padding-bottom: 5%;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 735px){
-    .cabecalho{
-        padding: 2%;
-        width: auto;
-                
-    }
-
-    .cabecalho__menu{
-        justify-content: flex-start;
-        gap: 10px;
-        padding-top: 1%;
-        padding-right: 0%;
-        padding-left: 0%;
-        padding-bottom: 1%;
-
-    }
-
     .cabecalho__menu__item{
-        padding:3%;
+        padding:2%;
         border: 2px solid var(--cor-terciaria);
         border-radius: 15px;
         font-family: var(--fonte-primaria);
         font-weight: 600;
+        font-size: 0.7rem;
         white-space: nowrap;
         color: var(--cor-terciaria);
         text-decoration: none;  
@@ -188,57 +119,25 @@ body{
     
     .conteudo{
         flex-direction: column-reverse;
-        padding: 5%;
+        padding: 0;
     }
 
     .conteudo__principal{
-        width: 50%;
-    }
-
-    .rodape{
-        padding-top: 5%;
-        padding-right: 1%;
-        padding-left: 2%;
-        padding-bottom: 5%;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 700px){
-    .cabecalho{
-        padding: 2%;
         width: auto;
-                
+        margin: 2em 2em;
     }
 
-    .cabecalho__menu{
-        justify-content: flex-start;
-        gap: 10px;
-        padding-top: 1%;
-        padding-right: 0%;
-        padding-left: 0%;
-        padding-bottom: 1%;
-
+    .conteudo__principal__titulo{
+        font-size: 2rem;
     }
 
-    .cabecalho__menu__item{
-        padding:3%;
-        border: 2px solid var(--cor-terciaria);
-        border-radius: 15px;
-        font-family: var(--fonte-primaria);
-        font-weight: 600;
-        white-space: nowrap;
-        color: var(--cor-terciaria);
-        text-decoration: none;  
+    .conteudo__principal__apresentacao{
+        font-size: 1.5rem;
     }
     
-    .conteudo{
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-
-    .conteudo__principal{
-        width: 50%;
+    .conteudo__principal__imagem{
+        margin-top: 2em;
+        width: 50vw;
     }
 
     .rodape{
