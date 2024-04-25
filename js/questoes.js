@@ -24,11 +24,11 @@ export default [
       ],
     },
     {
-      question: "Eu sou o ...",
+      question: "Qual o jogo que Daminha MAIS jogou no Xbox?",
       answers: [
-        { option: "Maioral", correct: false },
-        { option: "Gostosão", correct: false },
-        { option: "Caçador", correct: true },
+        { option: "Halo", correct: false },
+        { option: "GTA V", correct: false },
+        { option: "Left 4 Dead 2", correct: true },
       ],
     },
     {
@@ -58,7 +58,7 @@ export default [
     {
       question: "Quantas tatuagens tem Daminha?",
       answers: [
-        { option: "8", correct: true },
+        { option: "9", correct: true },
         { option: "3", correct: false },
         { option: "6", correct: false },
       ],
@@ -72,11 +72,11 @@ export default [
       ],
     },
     {
-      question: "Se ela fosse um pão, qual pão ela seria?",
+      question: "Qual o primeiro campeão do LOL que Daminha utilizou?",
       answers: [
-        { option: "Mole", correct: false },
-        { option: "Molhado", correct: true },
-        { option: "Duro", correct: false },
+        { option: "Nami", correct: false },
+        { option: "Ezreal", correct: true },
+        { option: "Garen", correct: false },
       ],
     },
   ];

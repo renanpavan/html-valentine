@@ -6,8 +6,8 @@ const content = document.querySelector(".content");
 const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
 const botao__reiniciar = document.querySelector(".botao__reiniciar");
-const img_happy = document.querySelector(".imagem__final__feliz");
-const img_sad = document.querySelector(".imagem__final__triste");
+const img_happy = document.querySelector(".img__happy");
+const img_sad = document.querySelector(".img__sad");
 
 import questions from "./questoes.js";
 
@@ -17,6 +17,8 @@ let questionsCorrect = 0;
 btnRestart.onclick = () => {
   content.style.display = "flex";
   contentFinish.style.display = "none";
+  img_happy.style.display = "none";
+  img_sad.style.display = "none";
 
   currentIndex = 0;
   questionsCorrect = 0;
@@ -37,17 +39,19 @@ function nextQuestion(e) {
 }
 
 function finish() {
-  if (questionsCorrect >= 5){
+  if (questionsCorrect >= 6){
     textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}. Parabéns, você conhece essa beldade.` ;
     content.style.display = "none";
     contentFinish.style.display = "flex";
     botao__reiniciar.style.display = "flex";
+    img_happy.style.display = "flex";
     
   } else {
     textFinish.innerHTML = `Você acertou ${questionsCorrect} de ${questions.length}. Vamos conversar mais com a Damola, por favor.`;
     content.style.display = "none";
     contentFinish.style.display = "flex";
     botao__reiniciar.style.display = "flex";
+    img_sad.style.display = "flex";
   }
 }
 
