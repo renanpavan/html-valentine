@@ -14,6 +14,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: var(--fonte-primaria);
 }
 
 body {
@@ -21,6 +22,51 @@ body {
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     box-sizing: border-box;
 }
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .spnQtd {
+  }
+  
+  .answers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #bd2e8d;
+    color: white;
+  }
+
+  .botao__reiniciar {
+    padding: 5px;
+    color: black;
+    background-color: gray;
+    border: solid 1px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .imagem__final__feliz, .imagem__final__triste{
+    display: none;
+  }
+  
 
 .cabecalho__menu {
     display: flex;
@@ -139,7 +185,6 @@ body {
     }
 
     .conteudo{
-        flex-direction: column-reverse;
         gap: 25px;
     }
 
@@ -166,6 +211,10 @@ body {
         font-size: 8px;
         text-align: center;
         
+    }
+
+    .botao__reiniciar {
+        text-align: center;
     }
 
 }
