@@ -62,6 +62,16 @@ h2{
     gap: 15px;
 }
 
+.container__host{
+    display: flex;
+    justify-content: center;
+}
+
+.img__host{
+    max-width: 60%;
+    align-self: center;
+}
+
 button {
     width: 100%;
     text-align: center;
@@ -174,6 +184,13 @@ button {
     font-family: var(--fonte-secundaria);
 }
 
+.botao__reiniciar{
+    width: 300px;
+    padding: 30px;
+    font-size: 32px;
+
+}
+
 /* MEDIA SCREEN */
 
 @media screen and (max-width: 420px) {
@@ -224,6 +241,10 @@ button {
 
     .botao__reiniciar {
         text-align: center;
+    }
+
+    .container__host{
+        display: none;
     }
 
 }
