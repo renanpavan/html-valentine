@@ -109,18 +109,42 @@ body {
 
     .cabecalho__menu {
 
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 5px 10px 5px 5px;
-
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 
     .cabecalho__menu__item {
 
         white-space: nowrap;
-        align-self: center;
-        padding: 2%;
+        text-align: center;
+        padding: 10px;
+        width: 100px;
+    }
+
+    .cabecalho__menu__item:nth-child(1) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .cabecalho__menu__item:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .cabecalho__menu__item:nth-child(3) {
+        grid-column: 3;
+        grid-row: 2;
+   }
+
+    .cabecalho__menu__item:nth-child(4) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .cabecalho__menu__item:nth-child(5) {
+        grid-column: 3;
+        grid-row: 3;
     }
 
     .conteudo{
