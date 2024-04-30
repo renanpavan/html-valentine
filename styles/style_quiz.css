@@ -133,6 +133,8 @@ button {
     padding-right: 3em;
     padding-left: 3em;
     padding-bottom: 1em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .cabecalho__menu__item {
@@ -200,6 +202,8 @@ button {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 
     .cabecalho__menu__item {
