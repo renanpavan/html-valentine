@@ -244,6 +244,10 @@ button {
 
     .botao__reiniciar {
         text-align: center;
+        width: 150px;
+        padding: 15px;
+        font-size: 15px;
+        
     }
 
     .container__host{
